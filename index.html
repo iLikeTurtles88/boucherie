@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucherie Dubois - Votre Artisan Boucher Familial à Liège</title>
+    <meta name="description" content="Boucherie Dubois à Liège : Viande de qualité supérieure, charcuterie maison, plats préparés. Savoir-faire familial et tradition depuis [Année de création].">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Lora:wght@400;700&display=swap" as="style" crossorigin="anonymous">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="images/logo-boucherie.webp" as="image">
+    <link rel="preload" href="images/equipe-boucherie.webp" as="image"> <!-- Preload image équipe -->
+    <link rel="preload" href="images/facade-boucherie.webp" as="image"> <!-- Preload image façade -->
+
+
+    <!-- SEO / Social Meta Tags -->
+    <meta property="og:title" content="Boucherie Dubois - Artisan Boucher à Liège">
+    <meta property="og:description" content="Viande de qualité, charcuterie maison et savoir-faire familial au cœur de Liège.">
+    <meta property="og:image" content="images/og-boucherie.png">
+    <meta property="og:url" content="[URL_DE_VOTRE_SITE_SI_EXISTANT]">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Boucherie Dubois">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Boucherie Dubois - Artisan Boucher à Liège">
+    <meta name="twitter:description" content="Qualité, tradition et conseil au service du goût. Votre boucherie familiale à Liège.">
+    <meta name="twitter:image" content="images/og-boucherie.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Votre Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-boucherie.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-boucherie.png">
+    <meta name="theme-color" content="#A03C3C">
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Butcher",
+      "name": "Boucherie Dubois",
+      "description": "Boucherie familiale traditionnelle à Liège, proposant une sélection rigoureuse de viandes de qualité (boeuf, porc, volaille, agneau), charcuterie artisanale et plats préparés maison.",
+      "image": "[URL_DE_VOTRE_SITE_SI_EXISTANT]/images/facade-boucherie.jpg", // Image principale pour Schema peut être la façade
+      "url": "[URL_DE_VOTRE_SITE_SI_EXISTANT]",
+      "telephone": "+3241234567",
+      "email": "mailto:contact@boucheriedubois.be",
+      "address": { "@type": "PostalAddress", "streetAddress": "[Numéro et Nom de la rue]", "addressLocality": "Liège", "postalCode": "[Code Postal de Liège]", "addressRegion": "Liège", "addressCountry": "BE" },
+      "geo": { "@type": "GeoCoordinates", "latitude": "[LATITUDE_REELLE]", "longitude": "[LONGITUDE_REELLE]" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:30", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "17:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday"], "opens": "00:00", "closes": "00:00" }
+      ],
+      "priceRange": "€€-€€€"
+    }
+    </script>
+
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- ===== En-tête ===== -->
+    <header class="header header-style-2" id="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Boucherie Dubois</a>
+            <div class="nav-menu" id="nav-menu" tabindex="-1">
+                <ul class="nav-list" role="menu">
+                    <li class="nav-item" role="none"><a href="#products" class="nav-link" role="menuitem">Nos Produits</a></li>
+                    <li class="nav-item" role="none"><a href="#about" class="nav-link" role="menuitem">Notre Histoire</a></li>
+                    <li class="nav-item" role="none"><a href="#values" class="nav-link" role="menuitem">Nos Engagements</a></li>
+                    <li class="nav-item" role="none"><a href="#location" class="nav-link" role="menuitem">Accès & Contact</a></li>
+                </ul>
+                <button class="nav-close" id="nav-close" aria-label="Fermer le menu">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-haspopup="true" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===== Bloc d'Introduction avec Logo ===== -->
+    <section class="intro-block" aria-labelledby="intro-title">
+        <div class="container intro-content">
+            <picture class="intro-logo-picture">
+                <source srcset="images/logo-boucherie.webp" type="image/webp">
+                <img src="images/logo-boucherie.png" alt="Logo Boucherie Dubois Liège" class="intro-logo-img" width="220" height="220">
+            </picture>
+            <h1 id="intro-title" class="intro-title">Le Goût Authentique,<br> Notre Savoir-Faire Familial</h1>
+            <p class="intro-subtitle">Depuis [Année], la Boucherie Dubois vous accueille à Liège avec passion et exigence.</p>
+            <a href="#products" class="btn btn-primary">Explorer notre sélection</a>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- ===== Section Notre Histoire (About) ===== -->
+        <section id="about" class="about-section section section-padding" role="region" aria-labelledby="about-title-h2">
+            <div class="container">
+                 <div class="about-content-alt">
+                     <div class="about-text animate-on-scroll">
+                        <h2 id="about-title-h2" class="section-title text-left alt-title">Notre Histoire : Passion & <span class="highlight">Tradition</span></h2>
+                        <p>Depuis [Année de création], la Boucherie Dubois c'est avant tout une aventure familiale. Guidés par l'amour du produit et le respect de la tradition, nous mettons notre savoir-faire artisanal à votre service.</p>
+                        <p>Installés au cœur de Liège, nous travaillons main dans la main avec des éleveurs locaux partageant nos valeurs pour vous garantir une viande d'une qualité exceptionnelle.</p>
+                        <p>Notre plus grande satisfaction ? Vous conseiller et partager avec vous le plaisir des bonnes choses. </p>
+                     </div>
+                     <div class="about-image animate-on-scroll">
+                         <picture>
+                           <source srcset="images/equipe-boucherie.webp" type="image/webp">
+                           <img src="images/equipe-boucherie.jpg" alt="L'équipe de la Boucherie Dubois" loading="lazy" width="600" height="450" class="img-raised">
+                         </picture>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+         <!-- ===== Section Nos Produits ===== -->
+        <section id="products" class="products-section section section-padding bg-alt" role="region" aria-labelledby="products-title-h2">
+            <div class="container">
+                <h2 id="products-title-h2" class="section-title alt-title centered-title">Nos Spécialités <span class="highlight">Artisanales</span></h2>
+                <p class="section-subtitle">Cliquez sur une catégorie pour en savoir plus sur notre sélection rigoureuse.</p>
+                <div class="products-grid style-2">
+                    <!-- Article Bœuf - Avec icône chevron -->
+                    <article class="product-category animate-on-scroll" tabindex="0" role="button" aria-expanded="false" aria-controls="details-boeuf">
+                        <div class="product-header">
+                            <div class="product-icon-title"> <!-- Conteneur pour icône et titre -->
+                                <i class="fas fa-cow product-icon"></i>
+                                <h3 class="product-title">Bœuf Matûré</h3>
+                            </div>
+                            <p class="product-description">Pièces sélectionnées, maturées sur os pour saveur et tendreté.</p>
+                            <i class="fas fa-chevron-down product-toggle-icon" aria-hidden="true"></i> <!-- Indicateur -->
+                        </div>
+                        <div class="product-details" id="details-boeuf">
+                             <picture> <source srcset="images/boeuf-detail.webp" type="image/webp"> <img src="images/boeuf-detail.jpg" alt="Belle côte de boeuf maturée" loading="lazy" width="400" height="250"> </picture>
+                            <p class="details-text">Notre bœuf, principalement de race Blanc Bleu Belge ou Limousine, est choisi pour sa tendreté exceptionnelle. Nous le laissons maturer sur os pendant plusieurs semaines dans nos caves dédiées, développant ainsi des saveurs profondes et une texture fondante. Parfait pour une côte à l'os, un T-bone ou un savoureux steak.</p>
+                        </div>
+                    </article>
+
+                    <!-- Article Porc - Avec icône chevron -->
+                    <article class="product-category animate-on-scroll" tabindex="0" role="button" aria-expanded="false" aria-controls="details-porc">
+                         <div class="product-header">
+                            <div class="product-icon-title">
+                                <i class="fas fa-piggy-bank product-icon"></i>
+                                <h3 class="product-title">Porc Plein Air</h3>
+                            </div>
+                            <p class="product-description">Élevé dans le respect du bien-être animal, saveur authentique.</p>
+                             <i class="fas fa-chevron-down product-toggle-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-details" id="details-porc">
+                             <picture> <source srcset="images/porc-detail.webp" type="image/webp"> <img src="images/porc-detail.jpg" alt="Rôti de porc Orloff préparé" loading="lazy" width="400" height="250"> </picture>
+                            <p class="details-text">Issu d'élevages locaux attentifs, notre porc offre une viande juteuse et goûteuse. Découvrez nos côtes premières, nos filets mignons, nos rôtis préparés (comme le célèbre Orloff) ou encore notre haché idéal pour vos préparations culinaires.</p>
+                        </div>
+                    </article>
+
+                    <!-- Article Volaille - Avec icône chevron -->
+                    <article class="product-category animate-on-scroll" tabindex="0" role="button" aria-expanded="false" aria-controls="details-volaille">
+                         <div class="product-header">
+                             <div class="product-icon-title">
+                                <i class="fas fa-feather-alt product-icon"></i>
+                                <h3 class="product-title">Volaille Label</h3>
+                             </div>
+                            <p class="product-description">Chair tendre et goûteuse, élevage en plein air garanti.</p>
+                             <i class="fas fa-chevron-down product-toggle-icon" aria-hidden="true"></i>
+                        </div>
+                         <div class="product-details" id="details-volaille">
+                            <picture> <source srcset="images/volaille-detail.webp" type="image/webp"> <img src="images/volaille-detail.jpg" alt="Poulet fermier prêt à cuire" loading="lazy" width="400" height="250"> </picture>
+                            <p class="details-text">Nous proposons des volailles fermières Label Rouge, garantissant une croissance lente et une alimentation saine. Goûtez la différence avec nos poulets entiers, nos cuisses, nos filets ou nos préparations spéciales comme les paupiettes ou les brochettes marinées.</p>
+                        </div>
+                    </article>
+
+                    <!-- Article Charcuterie - Avec icône chevron -->
+                    <article class="product-category animate-on-scroll" tabindex="0" role="button" aria-expanded="false" aria-controls="details-charcuterie">
+                         <div class="product-header">
+                            <div class="product-icon-title">
+                                <i class="fas fa-drumstick-bite product-icon"></i>
+                                <h3 class="product-title">Charcuterie Fine</h3>
+                            </div>
+                            <p class="product-description">Élaborée maison selon nos recettes traditionnelles.</p>
+                             <i class="fas fa-chevron-down product-toggle-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="product-details" id="details-charcuterie">
+                            <picture> <source srcset="images/charcuterie-detail.webp" type="image/webp"> <img src="images/charcuterie-detail.jpg" alt="Plateau de charcuterie artisanale" loading="lazy" width="400" height="250"> </picture>
+                             <p class="details-text">Toute notre charcuterie est fabriquée sur place, dans le respect des méthodes artisanales. Pâté de campagne, boudin noir ou blanc, saucisson sec, jambon cuit à l'os... Des produits authentiques pour vos apéritifs, entrées ou sandwichs gourmands.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Section Nos Engagements (Values) ===== -->
+        <section id="values" class="values-section section section-padding" role="region" aria-labelledby="values-title-h2">
+             <div class="container">
+                <h2 id="values-title-h2" class="section-title alt-title centered-title">Qualité, Fraîcheur & <span class="highlight">Conseil</span></h2>
+                <div class="values-grid style-2">
+                    <div class="value-item animate-on-scroll"> <i class="fas fa-map-marker-alt value-icon"></i> <h3 class="value-title">Circuit Court</h3> <p>Partenariat direct avec les éleveurs de notre région.</p> </div>
+                    <div class="value-item animate-on-scroll"> <i class="fas fa-check-circle value-icon"></i> <h3 class="value-title">Traçabilité</h3> <p>Une origine garantie pour chaque pièce de viande.</p> </div>
+                    <div class="value-item animate-on-scroll"> <i class="fas fa-comments value-icon"></i> <h3 class="value-title">Conseils du Boucher</h3> <p>Astuces de préparation et de cuisson sur mesure.</p> </div>
+                     <div class="value-item animate-on-scroll"> <i class="fas fa-recycle value-icon"></i> <h3 class="value-title">Démarche Durable</h3> <p>Limitation des déchets et respect de l'environnement.</p> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Section Accès & Contact (Location) ===== -->
+        <section id="location" class="location-section section section-padding bg-alt" role="region" aria-labelledby="location-title-h2">
+            <div class="container">
+                <h2 id="location-title-h2" class="section-title alt-title centered-title">Visitez-Nous à <span class="highlight">Liège</span></h2>
+                <div class="location-content">
+                    <div class="location-text animate-on-scroll">
+                        <h3><i class="fas fa-store"></i> Votre Boucherie de Quartier</h3>
+                        <address class="shop-address"> [Numéro et Nom de la rue]<br> [Code Postal] Liège<br> Belgique </address>
+                        <h4><i class="fas fa-clock"></i> Horaires</h4>
+                        <ul class="location-schedule style-2">
+                            <li><span>Lundi :</span> <span><span class="closed">Fermé</span></span></li>
+                            <li><span>Mardi - Vendredi :</span> <span>08:30 - 18:00</span></li>
+                            <li><span>Samedi :</span> <span>08:00 - 17:00</span></li>
+                            <li><span>Dimanche :</span> <span><span class="closed">Fermé</span></span></li>
+                        </ul>
+                        <h4><i class="fas fa-phone-alt"></i> Contact</h4>
+                        <p><i class="fas fa-phone fa-fw"></i> <a href="tel:+3241234567">04 123 45 67</a></p>
+                        <p><i class="fas fa-envelope fa-fw"></i> <a href="mailto:contact@boucheriedubois.be">contact@boucheriedubois.be</a></p>
+
+                        <!-- ===== AJOUT DE L'IMAGE DE LA FAÇADE ICI ===== -->
+                        <div class="location-facade-image">
+                             <picture>
+                               <source srcset="images/facade-boucherie.webp" type="image/webp">
+                               <!-- Remplacez les noms de fichiers par les vôtres -->
+                               <img src="images/facade-boucherie.jpg" alt="Façade de la Boucherie Dubois à Liège" loading="lazy" width="500" height="375">
+                             </picture>
+                             <p class="facade-caption">Notre boutique vous attend !</p> <!-- Légende optionnelle -->
+                        </div>
+                         <!-- ===== FIN DE L'AJOUT ===== -->
+
+                    </div> <!-- Fin de location-text -->
+
+                    <div class="location-map-image animate-on-scroll">
+                         <a href="https://www.google.com/maps/search/?api=1&query=[ADRESSE_URL_ENCODEE_BOUCHERIE_DUBOIS_LIEGE]" target="_blank" rel="noopener noreferrer" aria-label="Voir Boucherie Dubois sur Google Maps (nouvel onglet)">
+                            <picture>
+                                <source srcset="images/map-liege-placeholder.webp" type="image/webp">
+                                <img src="images/map-liege-placeholder.png" alt="Carte indiquant l'emplacement de la Boucherie Dubois à Liège" loading="lazy" class="map-image-placeholder">
+                            </picture>
+                        </a>
+                        <p class="map-caption">Trouvez-nous facilement ! Cliquez sur la carte.</p>
+                    </div>
+                </div> <!-- Fin de location-content -->
+            </div> <!-- Fin de container -->
+        </section>
+
+        <!-- ===== Section Contact Form ===== -->
+        <section id="contact" class="contact-section section section-padding" role="region" aria-labelledby="contact-title-h2">
+            <div class="container contact-form-container style-2 animate-on-scroll">
+                 <h2 id="contact-title-h2" class="section-title alt-title centered-title">Une Demande <span class="highlight">Spécifique ?</span></h2>
+                 <p class="section-subtitle">Laissez-nous un message ici. Pour les commandes, appelez-nous ou passez nous voir !</p>
+                 <form id="contact-form" class="contact-form style-2" novalidate action="[URL_POUR_TRAITER_LE_FORMULAIRE_SI_BESOIN]" method="POST">
+                     <div class="form-group sr-only" aria-hidden="true"> <label for="website-url">Ne pas remplir</label> <input type="text" id="website-url" name="website-url" tabindex="-1" autocomplete="off"> </div>
+                     <div class="form-row">
+                        <div class="form-group form-group-half"> <label for="name">Nom <span class="required">*</span></label> <input type="text" id="name" name="name" required placeholder="Votre nom" autocomplete="name" aria-required="true" aria-invalid="false" aria-describedby="form-status"> </div>
+                        <div class="form-group form-group-half"> <label for="email">Email <span class="required">*</span></label> <input type="email" id="email" name="email" required placeholder="Votre email" autocomplete="email" aria-required="true" aria-invalid="false" aria-describedby="form-status"> </div>
+                     </div>
+                    <div class="form-group"> <label for="subject">Sujet</label> <input type="text" id="subject" name="subject" placeholder="Ex: Commande spéciale..." aria-invalid="false" aria-describedby="form-status"> </div>
+                    <div class="form-group"> <label for="message">Message <span class="required">*</span></label> <textarea id="message" name="message" rows="5" required placeholder="Votre demande..." aria-required="true" aria-invalid="false" aria-describedby="form-status"></textarea> </div>
+                    <div class="form-submit-container"> <button type="submit" class="btn btn-primary"> Envoyer </button> </div>
+                     <p id="form-status" class="form-status" role="alert" aria-live="assertive"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Pied de Page ===== -->
+    <footer class="footer footer-style-2" role="contentinfo">
+        <div class="container footer-content">
+             <div class="footer-col footer-col-logo">
+                 <img src="images/logo-boucherie.png" alt="Logo Boucherie Dubois" width="150" class="footer-img-logo">
+                 <p>Votre artisan boucher de confiance à Liège.</p>
+            </div>
+            <div class="footer-col">
+                 <h4 class="footer-title">Navigation</h4>
+                 <ul role="list"> <li><a href="#products">Produits</a></li> <li><a href="#about">Histoire</a></li> <li><a href="#values">Engagements</a></li> <li><a href="#location">Contact</a></li> </ul>
+            </div>
+             <div class="footer-col">
+                 <h4 class="footer-title">Contactez-Nous</h4>
+                  <address class="footer-address"> Boucherie Dubois<br> [Numéro et Nom de la rue]<br> [Code Postal] Liège<br> <a href="tel:+3241234567">Tél : 04 123 45 67</a><br> <a href="mailto:contact@boucheriedubois.be">contact@boucheriedubois.be</a> </address>
+            </div>
+             <div class="footer-col">
+                 <h4 class="footer-title">Horaires</h4>
+                 <ul class="footer-hours" role="list"> <li>Mar - Ven : 08:30 - 18:00</li> <li>Samedi : 08:00 - 17:00</li> <li>Dim & Lun : Fermé</li> </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Boucherie Dubois. Tous droits réservés.</p>
+            <p><a href="#legal">Mentions Légales</a> | <a href="#privacy">Vie Privée</a></p>
+        </div>
+    </footer> <!-- Fermeture du footer -->
+
+    <!-- ===== Bouton Retour en Haut (Placé ici, en dehors du footer) ===== -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Retour en haut de la page" title="Retour en haut">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
